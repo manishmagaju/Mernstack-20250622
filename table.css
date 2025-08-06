@@ -1,0 +1,23 @@
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+ 
+td{
+    border: 1px solid black;
+    padding: 0.4rem;
+}
+
+th{
+    border: 1px solid black;
+    padding: 0.5rem;
+    background-color: gray;
+}
+
+tfoot tr:last-child td {
+    background-color: cadetblue;
+    color: aqua;
+    
+}

@@ -1,177 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML form</title>
-  </head>
 
-  <body>
-    <form action="" method="get">
-      <!-- input element -->
-      <h3>Apply for mernstack 2025</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML form</title>
 
-      <!-- textinput -->
-      <div>
-        <label for="name">Enter your name</label>
-        <input
-          type="text"
-          id="name"
-          name="naam"
-          placeholder="enteryourname"
-          required
-        />
-      </div>
+  <link rel="stylesheet" href="form.css">
+</head>
 
-      <!-- number input -->
-      <div>
-        <label for="phone">Enter your phone number</label>
-        <input
-          type="number"
-          name="phonenumber"
-          id="phone"
-          min="0"
-          max="20"
-          placeholder="9847484****"
-        />
-      </div>
+<body>
+  <form action="" method="get" class="form">
+    <!-- input element -->
+    <h3>Apply for mernstack 2025</h3>
 
-      <!-- email input -->
-      <div>
-        <label for="email">Enter your email</label>
-        <input type="email" name="emailaddress" id="email" />
-      </div>
+    <!-- textinput -->
+    <div>
+      <label for="name">Enter your name</label>
+      <input type="text" id="name" name="naam" placeholder="enteryourname" required />
+    </div>
 
-      <!-- password input -->
-      <div>
-        <label for="password">Enter your password</label>
-        <input type="password" name="yourpassword" id="password" />
-      </div>
+    <!-- number input -->
+    <div>
+      <label for="phone">Enter your phone number</label>
+      <input type="number" name="phonenumber" id="phone" min="0" max="20" placeholder="9847484****" />
+    </div>
 
-      <!-- radio button -->
-      <div>
-        <label for="male">male</label>
-        <input type="radio" name="gender" id="male" />
-        <label for="female">female</label>
-        <input type="radio" name="gender" id="female" />
-      </div>
+    <!-- email input -->
+    <div>
+      <label for="email">Enter your email</label>
+      <input type="email" name="emailaddress" id="email" />
+    </div>
 
-      <!-- checkbox -->
-      <div>
-        <label for="physic">physic</label>
-        <input type="checkbox" name="physic" id="physic" />
-        <label for="chemistry">chemistry</label>
-        <input type="checkbox" name="chemistry" id="chemistry" />
-        <label for="biology">biology</label>
-        <input type="checkbox" name="biology" id="biology" />
-        <label for="Maths">Maths</label>
-        <input type="checkbox" name="maths" id="Maths" />
-      </div>
+    <!-- password input -->
+    <div>
+      <label for="password">Enter your password</label>
+      <input type="password" name="yourpassword" id="password" />
+    </div>
 
-      <!-- date input -->
-      <div>
-        <label for="dateofbirth">Enter your date of birth</label>
-        <input type="date" name="dateofbirth" id="dateofbirth" />
-      </div>
+    <!-- radio button -->
+    <div>
+      <h5>choose your gender</h5>
+      <label for="male">male</label>
+      <input type="radio" name="gender" id="male" />
+      <label for="female">female</label>
+      <input type="radio" name="gender" id="female" />
+    </div>
 
-      <!-- time input -->
-      <div>
-        <label for="times">enter your alarm</label>
-        <input type="time" name="time" id="times" />
-      </div>
+    <!-- checkbox -->
+    <div>
+      <h5>choose your favourite subject</h5>
+      <label for="physic">physic</label>
+      <input type="checkbox" name="physic" id="physic" />
+      <label for="chemistry">chemistry</label>
+      <input type="checkbox" name="chemistry" id="chemistry" />
+      <label for="biology">biology</label>
+      <input type="checkbox" name="biology" id="biology" />
+      <label for="Maths">Maths</label>
+      <input type="checkbox" name="maths" id="Maths" />
+    </div>
 
-      <div>
-        <label for="minmax">For min and max</label>
-        <input type="time" name="timemin" id="" min="09:00" max="10:00" />
-      </div>
+    <!-- date input -->
+    <div>
+      <label for="dateofbirth">Enter your date of birth</label>
+      <input type="date" name="dateofbirth" id="dateofbirth" />
+    </div>
 
-      <div>
-        <label for="stepstime">For step time showing</label>
-        <input type="time" name="timestep" id="steptime" step="900" />
-      </div>
+    <!-- time input -->
+    <div>
+      <label for="times">enter your alarm</label>
+      <input type="time" name="time" id="times" />
+    </div>
 
-      <div>
-        <label for="appointment">choose your appointment date and time</label>
-        <input type="datetime-local" name="appointmentdate" id="appointment" />
-      </div>
+    <div>
+      <label for="minmax">For min and max</label>
+      <input type="time" name="timemin" id="" min="09:00" max="10:00" />
+    </div>
 
-      <!-- range -->
-      <div>
-        <label for="volume">Select volume</label>
-        <input type="range" value="50" step="3" id="volume" name="volume" />
-      </div>
+    <div>
+      <label for="stepstime">For step time showing</label>
+      <input type="time" name="timestep" id="steptime" step="900" />
+    </div>
 
-      <!-- color -->
-      <div>
-        <label for="color">select your fav color</label><br />
-        <input type="color" name="" id="color" name="color" />
-      </div>
+    <div>
+      <label for="appointment">choose your appointment date and time</label>
+      <input type="datetime-local" name="appointmentdate" id="appointment" />
+    </div>
 
-      <!-- file -->
-      <div>
-        <label for="files">upload your image</label><br />
-        <input
-          type="file"
-          name=""
-          id="files"
-          name="files"
-          multiple
-          accept=".png"
-        />
-      </div>
+    <!-- range -->
+    <div>
+      <label for="volume">Select volume</label>
+      <input type="range" value="50" step="3" id="volume" name="volume" />
+    </div>
 
-      <!-- dropdown -->
-      <div>
-        <label for="selects">select your class</label>
-        <select name="" id="selects" name="yourclass">
-          <option value="">class1</option>
-          <option value="">class2</option>
-          <option value="">class3</option>
-          <option value="">class4</option>
-          <option value="">class5</option>
-        </select>
-      </div>
+    <!-- color -->
+    <div>
+      <label for="color">select your fav color</label><br />
+      <input type="color" name="" id="color" name="color" />
+    </div>
 
-      <!-- textarea -->
-      <div>
-        <label for="text">Enter your message</label>
-        <textarea
-          placeholder="enter your message"
-          name="yourmessage"
-          id="text"
-        ></textarea>
-      </div>
+    <!-- file -->
+    <div>
+      <label for="files">upload your image</label><br />
+      <input type="file" name="" id="files" name="files" multiple accept=".png" />
+    </div>
 
-      <!-- binding label and input -->
-      <div>
-        <label for="name">enter your name </label>
-        <input type="text" id="name" minlength="6" />
-      </div>
+    <!-- dropdown -->
+    <div>
+      <label for="selects">select your class</label>
+      <select name="" id="selects" name="yourclass">
+        <option value="">class1</option>
+        <option value="">class2</option>
+        <option value="">class3</option>
+        <option value="">class4</option>
+        <option value="">class5</option>
+      </select>
+    </div>
 
-      <!-- datalist tag -->
+    <!-- textarea -->
+    <div>
+      <label for="text">Enter your message</label>
+      <textarea placeholder="enter your message" name="yourmessage" id="text"></textarea>
+    </div>
 
-      <div>
-        <label for="datalist">select your name</label>
-        <input type="text" id="datalist" list="proxima" />
-        <datalist id="proxima">
-          <option value="manish magaju"></option>
-          <option value="ritika rawal"></option>
-          <option value="sujan bhattarai"></option>
-          <option value="raju waiba"></option>
-        </datalist>
-      </div>
+    <!-- binding label and input -->
+    <div>
+      <label for="name">enter your name </label>
+      <input type="text" id="name" minlength="6" />
+    </div>
 
-      <!-- fieldset -->
-      <fieldset>
-        <legend>your contact information</legend>
-      </fieldset>
+    <!-- datalist tag -->
 
-      <!-- input submit -->
-      <div>
-        <input type="submit" value="submit your form" />
-      </div>
+    <div>
+      <label for="datalist">select your name</label>
+      <input type="text" id="datalist" list="proxima" />
+      <datalist id="proxima">
+        <option value="manish magaju"></option>
+        <option value="ritika rawal"></option>
+        <option value="sujan bhattarai"></option>
+        <option value="raju waiba"></option>
+      </datalist>
+    </div>
 
-      <!-- embedding -->
+    <!-- fieldset -->
+    <fieldset>
+      <legend>your contact information</legend>
+    </fieldset>
+
+    <!-- input submit -->
+    <div>
+      <input type="submit" value="submit your form" />
+    </div>
+
+    <!-- embedding
       <iframe
         width="560"
         height="500"
@@ -191,8 +172,9 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      
-    </form>
-  </body>
+      ></iframe> -->
+
+  </form>
+</body>
+
 </html>
