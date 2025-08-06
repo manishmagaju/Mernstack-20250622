@@ -1,0 +1,42 @@
+.position {
+  border: 6px solid pink;
+  display: flex;
+  position: relative;
+  
+  
+
+}
+
+.box1 {
+  background-color: orange;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 40px;
+  top: 10px;
+  background-image: url(assets/images/image.png);
+  z-index: 20;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+
+}
+
+.box2 {
+  background-color: gray;
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+ position: sticky;
+ top: 0px;
+
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  
+
+}
+
+
