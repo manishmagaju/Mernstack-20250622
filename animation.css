@@ -1,0 +1,24 @@
+.myanimation {
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  animation: animation 5s linear 1s infinite normal; /*animation name should be keyframe*/
+}
+
+/* template of animation */
+@keyframes animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(500px, 0px);
+  }
+
+  75% {
+    transform: translate(500px, 500px);
+  }
+  100% {
+    transform: translate(0px, 500px);
+  }
+}
